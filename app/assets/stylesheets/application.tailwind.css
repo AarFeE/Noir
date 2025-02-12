@@ -1,0 +1,35 @@
+.hide-header {
+  transform: translateY(-100%);
+  transition: transform 0.15s ease-in-out;
+}
+
+header {
+  transition: transform 0.15s ease-in-out;
+}
+
+@keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .animated-gradient {
+    background: linear-gradient(
+      270deg,
+      rgba(255, 154, 158, 0.3), /* Light pink with 0.3 alpha */
+      rgba(250, 208, 196, 0.3), /* Light peach with 0.3 alpha */
+      rgba(251, 194, 235, 0.3), /* Light lavender with 0.3 alpha */
+      rgba(166, 193, 238, 0.3), /* Light blue with 0.3 alpha */
+      rgba(251, 194, 235, 0.3), /* Light lavender with 0.3 alpha */
+      rgba(250, 208, 196, 0.3), /* Light peach with 0.3 alpha */
+      rgba(255, 154, 158, 0.3)  /* Light pink with 0.3 alpha */
+    );
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+  }

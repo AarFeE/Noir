@@ -1,0 +1,37 @@
+<header class="animated-gradient shadow-lg fixed w-full top-0 z-50 backdrop-blur-md"
+        data-controller="header"
+        data-header-target="header">
+  <div class="mx-auto px-4 sm:px-6 lg:px-40 py-4 rounded-lg">
+    <div class="flex justify-between items-center">
+      <%= link_to root_path, class: "focus:outline-none" do %>
+        <div class="h-25 flex items-center">
+          <img class="h-full w-auto" src="<%= asset_path('logos/noir-logo.svg') %>" alt="Noir Logo">
+        </div>
+      <% end %>
+      <nav class="flex gap-7">
+        <%= link_to root_path, class: "no-underline flex-1 text-nowrap" do %>
+          <button class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 w-full">
+            <span class="relative px-5 py-2.5 transition-all ease-in duration-200 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent w-full">
+              Home
+            </span>
+          </button>
+        <% end %>
+        <button class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800 flex-1 text-nowrap">
+          <span class="relative px-5 py-2.5 transition-all ease-in duration-200 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent w-full">
+            Search
+          </span>
+        </button>
+        <button class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800 flex-1 text-nowrap">
+          <span class="relative px-5 py-2.5 transition-all ease-in duration-200 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent w-full">
+            Carts
+          </span>
+        </button>
+        <button class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 flex-1 text-nowrap">
+          <span class="relative px-5 py-2.5 transition-all ease-in duration-200 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent w-full">
+            About
+          </span>
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>
