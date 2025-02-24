@@ -1,0 +1,14 @@
+<%= link_to link, class: "no-underline flex-grow flex-shrink flex-basis-0 text-nowrap" do %>
+  <button class="<%= [
+    'relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br',
+    gradient_classes(color),
+    "group-hover:#{gradient_classes(color)}",
+    'hover:text-white dark:text-white focus:ring-4 focus:outline-none',
+    focus_ring_classes(color),
+    'w-full'
+  ].join(' ') %>">
+    <span class="relative px-5 py-2.5 transition-all ease-in duration-200 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent w-full">
+      <%= label %>
+    </span>
+  </button>
+<% end %>

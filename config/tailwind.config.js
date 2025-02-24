@@ -9,6 +9,20 @@ module.exports = {
     './app/assets/stylesheets/**/*.css',
     './node_modules/flowbite/**/*.js' // Add Flowbite
   ],
+  safelist: [
+    {
+      pattern: /from-(purple|teal|cyan|red)-(600|500|300|200)/,
+      variants: ['group-hover'],
+    },
+    {
+      pattern: /to-(blue|lime|yellow)-(500|300|200)/,
+      variants: ['group-hover'],
+    },
+    {
+      pattern: /focus:ring-(blue|lime|cyan|red)-(300|200|100)/,
+      variants: ['dark'],
+    },
+  ],
   theme: {
     extend: {
       fontFamily: {
